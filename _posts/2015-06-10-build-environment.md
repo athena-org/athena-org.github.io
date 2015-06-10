@@ -9,7 +9,7 @@ Before working with any of the Athena tools, you will need to set up your build 
 What you will need will depend on if you want to use or work on the Athena tools.
 
 
-## Rust
+### Rust
 
 Athena is built on Rust, a fast and safe systems programming language. Some Athena tools need
 to compile Rust code at runtime, so you will need to install the Rust compiler. Since all Athena
@@ -19,7 +19,7 @@ You can install Rust by going to the [Rust download page](http://www.rust-lang.o
 and installing **Rust Nightly 32 bit**. Currently, not all projects will work on stable or 64 bit.
 
 
-## Native Dependencies (Development Only)
+### Native Dependencies (Development Only)
 
 If you want to work on Athena tools rather than just use them, you will need to have the native
 dependencies needed to build them installed. **Currently you also need to do this manually if
@@ -36,4 +36,12 @@ In this new folder, create a file "config" with the following content:
 rustc-link-search = ["C:/PATH/TO/DEPENDENCIES"]
 rustc-link-lib = ["freetype-6"]
 root = "C:/PATH/TO/DEPENDENCIES"
+```
+
+### Building
+
+Once the build environment is set up, all you have to do to build an Athena tool from source is:
+
+```
+cargo build
 ```
